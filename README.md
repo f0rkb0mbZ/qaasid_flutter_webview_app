@@ -15,9 +15,9 @@ Some technical details about the project:
 
 ## App Screenshots
 
-<img src="D:\Projects\qaasid\flutter\qaasid\screenshots\Screenshot_20200512-195839.png" style="zoom:20%;" />				<img src="D:\Projects\qaasid\flutter\qaasid\screenshots\Screenshot_20200512-200726.png" style="zoom:20%;" />				<img src="D:\Projects\qaasid\flutter\qaasid\screenshots\Screenshot_20200512-200011.png" style="zoom:20%;" />
+<img src="screenshots/Screenshot_20200512-195839.png" style="zoom:20%;" />				<img src="screenshots/Screenshot_20200512-200726.png" style="zoom:20%;" />				<img src="screenshots/Screenshot_20200512-200011.png" style="zoom:20%;" />
 
-<img src="D:\Projects\qaasid\flutter\qaasid\screenshots\Screenshot_20200512-200038.png" style="zoom:20%;" />				<img src="D:\Projects\qaasid\flutter\qaasid\screenshots\Screenshot_20200512-200100.png" style="zoom:20%;" />				<img src="D:\Projects\qaasid\flutter\qaasid\screenshots\Screenshot_20200512-200050.png" style="zoom:20%;" />
+<img src="screenshots/Screenshot_20200512-200038.png" style="zoom:20%;" />				<img src="screenshots/Screenshot_20200512-200100.png" style="zoom:20%;" />				<img src="screenshots/Screenshot_20200512-200050.png" style="zoom:20%;" />
 
 ## How to Get
 
