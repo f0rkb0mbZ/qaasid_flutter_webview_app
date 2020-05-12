@@ -1,0 +1,75 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:webview_flutter/webview_flutter.dart';
+
+void main() {
+  runApp(MyApp());
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.white54,
+      systemNavigationBarColor: Colors.black,
+      systemNavigationBarDividerColor: Colors.black,
+      systemNavigationBarIconBrightness: Brightness.light,
+    ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          brightness: Brightness.light,
+          primaryColor: Colors.white,
+          scaffoldBackgroundColor: Colors.white,
+        ),
+        home: Scaffold(body: WebViewClass()));
+  }
+}
+
+class WebViewClass extends StatefulWidget {
+  WebViewState createState() => WebViewState();
+}
+
+class WebViewState extends State<WebViewClass> {
+  num position = 1;
+
+  final key = UniqueKey();
+
+  doneLoading(String A) {
+    setState(() {
+      position = 0;
+    });
+  }
+
+  startLoading(String A) {
+    setState(() {
+      position = 1;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: PreferredSize(
+            child: AppBar(
+              elevation: 0.0,
+            ),
+            preferredSize: Size.fromHeight(0.0)),
+        body: IndexedStack(index: position, children: <Widget>[
+          WebView(
+            initialUrl: 'https://qaasid.live',
+            javascriptMode: JavascriptMode.unrestricted,
+            key: key,
+            onPageFinished: doneLoading,
+            onPageStarted: startLoading,
+            
+          ),
+          Container(
+            color: Colors.white,
+            child: Center(child: CircularProgressIndicator()),
+          ),
+        ]));
+  }
+}
