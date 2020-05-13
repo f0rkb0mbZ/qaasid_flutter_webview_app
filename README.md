@@ -20,4 +20,4 @@ Some technical details about the project:
 
 ## How to Get
 
-Check the [release]() page to download the APK.
+Check the [release](https://github.com/forkbomb-666/qaasid_flutter_webview_app/releases) page to download the APK.
